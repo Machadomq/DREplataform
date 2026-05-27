@@ -238,6 +238,7 @@ export default function PaginaProjeto({ projeto, recursos, onAtualizar, onExclui
             <FormDRE
               periodo={periodoAtual}
               recursos={recursos}
+              nomeProjeto={projeto.nome}
               onSalvar={(linhas, obs, alocacoes) => salvarPeriodo(periodoAtual.id, linhas, obs, alocacoes)}
             />
           ) : (
